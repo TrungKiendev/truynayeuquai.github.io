@@ -10,6 +10,7 @@
 	<meta property="og:url" content="https://truynayeuquai.github.io/" />
 	<meta property="og:image" content="http://truynayeuquai.github.io/images/ogimage.jpg" />
 	<meta property="og:image:secure_url" content="https://truynayeuquai.github.io/images/ogimage.jpg" />
+	<meta property="fb:app_id" content="299305840613817" />
 	<meta property="og:description" content="Danh sách truy nã yêu quái" />
 	<meta name="Description" content="Danh sách truy nã yêu quái"/>
 	<meta name="Keywords" content="truy, na, nã, yeu, yêu, quai, quái, truy nã, truy na, yêu quái, yeu quai, truy nã yêu quái, truy na yeu quai, truynayeuquai, amduongsu, âm dương sư, am duong su, ads, onmyoji, vn"/>
@@ -2789,11 +2790,34 @@
 			columnDefs: [ { targets: [ 0, 3 ], searchable: false } ]
 		} );
 		if ($(window).width() > '650') {
-			$('#table_truyna_filter').detach().appendTo('thead').css({ position: "absolute", top: "8px", right: "0"}) }
-			else {
-				$('#table_truyna_filter').detach().prependTo('thead').css({ position: "static", top: "8px", right: "0"}) };
-				$('input[type=search]').focus();
-			});
-			</script>
-		</body>
-		</html>
+			$('#table_truyna_filter').detach().appendTo('thead').css({ position: "absolute", top: "8px", right: "0"})
+		}
+		else {
+			$('#table_truyna_filter').detach().prependTo('thead').css({ position: "static", top: "8px", right: "0"})
+		};
+		$('input[type=search]').focus();
+	});
+	</script>
+	<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId      : '299305840613817',
+			cookie     : true,
+			xfbml      : true,
+			version    : 'v3.0'
+		});
+
+		FB.AppEvents.logPageView();
+
+	};
+
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "https://connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+</body>
+</html>
